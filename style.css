@@ -2,23 +2,31 @@
 
 /*-------------*/
 *,
+
 :before,
 :after {
+
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+
 body {
+  display: flex;
   font-family: 'Noto Sans JP', sans-serif;
   color: #2c3e66;
   background-color: #ececf6;
 }
 
 .layout {
+  display: flex;
   min-height: 100vh;
 }
 
 .sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #f2f3ff;
   padding: 0.5rem;
   box-shadow: 1px 0px 8px #c2d1dd;
@@ -29,10 +37,16 @@ a {
 }
 
 .feature {
+
   padding: 0.5rem;
 }
 
 img {
+  display: flex;
   height: 1.5rem;
   width: 1.5rem;
+}
+
+.content {
+  display: flex;
 }
